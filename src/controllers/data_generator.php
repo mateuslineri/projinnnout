@@ -72,10 +72,10 @@ $lazyRate) {
     }
 }
 
-$lastMonth = strtotime('first day of last month');
-populateWorkingHours(1, date('Y-m-d', $lastMonth), 70, 20, 10);
-populateWorkingHours(3, date('Y-m-d', $lastMonth), 20, 75, 5);
-populateWorkingHours(4, date('Y-m-d', $lastMonth), 20, 10, 70);
+$lastMonth = strtotime('now -1 month');
+populateWorkingHours(1, date('Y-m-1', $lastMonth), 70, 20, 10);
+populateWorkingHours(3, date('Y-m-1', $lastMonth), 20, 75, 5);
+populateWorkingHours(4, date('Y-m-1', $lastMonth), 20, 10, 70);
 
 ?>
 <div>
