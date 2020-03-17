@@ -19,7 +19,6 @@ class Model {
                 }
                 $this->$key = $cleanValue;
             }
-            $conn->close();
         }
     }
 
@@ -29,6 +28,10 @@ class Model {
 
     public function __set($key, $value) {
         $this->values[$key] = $value;
+    }
+
+    public function getValues() {
+        return $this->values;
     }
 
     public static function getOne($filters = [], $columns = '*') {
