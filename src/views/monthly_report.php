@@ -20,14 +20,14 @@
 						?>
 					</select>
 				<?php endif ?>
-				<!-- <select name="period" class="form-control" placeholder="Selecione o período...">
+				<select name="period" class="form-control" placeholder="Selecione o período...">
 					<?php
-						// foreach($periods as $key => $month) {
-						// 	$selected = $key === $selectedPeriod ? 'selected' : '';
-						// 	echo "<option value='{$key}' {$selected}>{$month}</option>";
-						// }
+						foreach($periods as $key => $month) {
+							$selected = $key === $selectedPeriod ? 'selected' : '';
+							echo "<option value='{$key}' {$selected}>{$month}</option>";
+						}
 					?>
-				</select> -->
+				</select>
 				<button class="btn btn-primary ml-2">
 					<i class="icofont-search"></i>
 				</button>
